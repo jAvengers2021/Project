@@ -1,0 +1,544 @@
+
+iframe{
+width:100%;
+height:25em;
+	
+}
+
+.navbar-brand {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+.cont {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  cursor: pointerd;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slider.animation {
+  transition: transform 750ms ease-in-out;
+}
+.slider.animation .slide__darkbg {
+  transition: transform 750ms ease-in-out;
+}
+.slider.animation .slide__text {
+  transition: transform 750ms ease-in-out;
+}
+.slider.animation .slide__letter {
+  transition: transform 750ms ease-in-out;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide--1 {
+  left: 0%;
+}
+.slide--2 {
+  left: 100%;
+}
+.slide--3 {
+  left: 200%;
+}
+.slide--4 {
+  left: 300%;
+}
+.slide--5 {
+  left: 400%;
+}
+.slide__darkbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  z-index: 10;
+}
+.slide__text-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+}
+.slide__letter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  font-size: 50vw;
+  font-weight: 800;
+  color: #000;
+  z-index: 2;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slide__text {
+  font-size: 8vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: translate3d(0, 0, 0);
+  letter-spacing: 12px;
+  color: #fff;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slide__text:nth-child(odd) {
+  z-index: 2;
+}
+.slide__text:nth-child(even) {
+  z-index: 2;
+}
+.slide--1__darkbg {
+  left: 0%;
+  background: url("../img/AVELLINO.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--1__darkbg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--1__letter {
+  background: url("../img/AVELLINO.jpg") center center no-repeat;
+  background-position: 0px center, 0px center;
+  background-size: cover;
+}
+.slide--2__darkbg {
+  left: -50%;
+  background: url("../img/Benevento.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--2__darkbg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--2__letter {
+  background: url("../img/Benevento.jpg") center center no-repeat;
+  background-position: 0px center, 0px center;
+  background-size: cover;
+}
+.slide--3__darkbg {
+  left: -100%;
+  background: url("../img/Caserta.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--3__darkbg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--3__letter {
+  background: url("../img/Caserta.jpg") center center no-repeat;
+  background-position: 0px, 0px;
+  background-size: cover;
+}
+.slide--4__darkbg {
+  left: -150%;
+  background: url("../img/Napoli.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--4__darkbg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--4__letter {
+  background: url("../img/Napoli.jpg") center center no-repeat;
+  background-position: 0px center, 0px center;
+  background-size: cover;
+}
+.slide--5__darkbg {
+  left: -200%;
+  background: url("../img/Salerno.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--5__darkbg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--5__letter {
+  background: url("../img/Salerno.jpg") center center no-repeat;
+  background-position: 0px center, 0px center;
+  background-size: cover;
+}
+
+.jumbo {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style-type: none;
+  z-index: 10;
+}
+.nav__slide {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .nav__slide {
+    width: 22px;
+    height: 22px;
+  }
+}
+.nav__slide:hover:after {
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+.nav__slide:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: 300ms;
+}
+.nav__slide--1 {
+  margin-left: 0;
+}
+
+.nav-active:after {
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+
+.side-nav {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  cursor: pointer;
+  opacity: 0;
+  transition: 300ms;
+}
+.side-nav:hover {
+  opacity: 0.1;
+}
+.side-nav--right {
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+.side-nav--left {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Bangers", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: rgba(97, 98, 102, 0.83);
+  overflow: hidden;
+  padding: 14px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.page {
+  padding: 5em 5em;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  background:rgba(11, 15, 39, 0.83);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact {
+  padding: 2em 5em;
+  margin: 0 auto;
+  width: 100%;
+  height: 50vh;
+  background:rgba(97, 98, 102, 0.83);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-size: 50px;
+  color: #eceeef;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+}
+
+.dropdown-content a:hover {background-color: red;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.site-footer
+{
+  
+  padding: 20px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:10px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:white;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:white;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.youtube:hover
+{
+  background-color:#ff0000
+}
+.social-icons a.instagram:hover
+{
+  background-color:#e74a4a
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+a#ex3:hover, a#ex3:active {
+	background: grey;
+	}
+
+
+
